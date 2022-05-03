@@ -31,8 +31,8 @@ barplot(summary(data$Sickness), main="Sickness")
 ############################ Pie charts #########################
 ## Plot the proportions of chills for sick and healthy 
 par(mfrow=c(1,2)) # 1 row and 2 columns for sick and healthy categories
-pie(table(data$chills[data$Sickness=="Y"]), xlab="Sick", main="Chills", radius=5)
-pie(table(data$chills[data$Sickness=="N"]), xlab="Healthy", main="Chills", radius=5)
+pie(table(data$chills[data$Sickness=="Y"]), xlab="Sick", main="Chills")
+pie(table(data$chills[data$Sickness=="N"]), xlab="Healthy", main="Chills")
 
 
 ##################### EXTRA CODE #######################################
