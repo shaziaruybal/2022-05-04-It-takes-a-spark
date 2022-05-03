@@ -1,5 +1,4 @@
-#################### School map #################
-dev.off()
+#################### School trip map #################
 # Load the map file
 map <- load(url("https://raw.githubusercontent.com/shaziaruybal/2022-05-04-It-takes-a-spark/master/data/Map.rda"))
 
@@ -7,6 +6,7 @@ map <- load(url("https://raw.githubusercontent.com/shaziaruybal/2022-05-04-It-ta
 map_data = read.delim("https://raw.githubusercontent.com/shaziaruybal/2022-05-04-It-takes-a-spark/master/data/Coordinates_student_data.txt")
 
 # Plot the map
+dev.off()
 plot(melb_map)
 
 # Add points with color for the sick students
